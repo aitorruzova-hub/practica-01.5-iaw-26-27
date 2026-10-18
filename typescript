@@ -1,0 +1,52 @@
+Script started on 2026-10-15 07:56:32+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="145" LINES="16"]
+[?2004h]0;ubuntu@ip-172-31-18-96: ~/practica-01.5-iaw-26-27[01;32mubuntu@ip-172-31-18-96[00m:[01;34m~/practica-01.5-iaw-26-27[00m$ clear[K[K[K[K[Kcd scripts/
+[?2004l[?2004h]0;ubuntu@ip-172-31-18-96: ~/practica-01.5-iaw-26-27/scripts[01;32mubuntu@ip-172-31-18-96[00m:[01;34m~/practica-01.5-iaw-26-27/scripts[00m$ clear
+[?2004l[H[2J[3J[?2004h]0;ubuntu@ip-172-31-18-96: ~/practica-01.5-iaw-26-27/scripts[01;32mubuntu@ip-172-31-18-96[00m:[01;34m~/practica-01.5-iaw-26-27/scripts[00m$ c[Kping[K[K[K[Kpong[K[K[K[Kbong[K[K[K[Km[Kbang[K[K[K[K./[K[Ksudo certbot
+[?2004lSaving debug log to /var/log/letsencrypt/letsencrypt.log
+Please enter the domain name(s) you would like on your certificate (comma and/or
+space separated) (Enter 'c' to cancel): y
+Requesting a certificate for y
+[31mAn unexpected error occurred:[0m
+[31mInvalid identifiers requested :: Cannot issue for "y": Domain name needs at least one dot[0m
+Ask for help or search for solutions at https://community.letsencrypt.org. See the logfile /var/log/letsencrypt/letsencrypt.log or re-run Certbot with -v for more details.
+[?2004h]0;ubuntu@ip-172-31-18-96: ~/practica-01.5-iaw-26-27/scripts[01;32mubuntu@ip-172-31-18-96[00m:[01;34m~/practica-01.5-iaw-26-27/scripts[00m$ sudo certbot
+[?2004lSaving debug log to /var/log/letsencrypt/letsencrypt.log
+Please enter the domain name(s) you would like on your certificate (comma and/or
+space separated) (Enter 'c' to cancel): 
+[31mPlease specify --domains, --ip-address, or --installer that will help in domain names autodiscovery, or --cert-name for an existing certificate name.[0m
+Ask for help or search for solutions at https://community.letsencrypt.org. See the logfile /var/log/letsencrypt/letsencrypt.log or re-run Certbot with -v for more details.
+[?2004h]0;ubuntu@ip-172-31-18-96: ~/practica-01.5-iaw-26-27/scripts[01;32mubuntu@ip-172-31-18-96[00m:[01;34m~/practica-01.5-iaw-26-27/scripts[00m$ sudo certbot
+[?2004lSaving debug log to /var/log/letsencrypt/letsencrypt.log
+Please enter the domain name(s) you would like on your certificate (comma and/or
+space separated) (Enter 'c' to cancel): practica-aur.ddns.net
+Certificate not yet due for renewal
+
+You have an existing certificate that has exactly the same domains or certificate name you requested and isn't close to expiry.
+(ref: /etc/letsencrypt/renewal/practica-aur.ddns.net.conf)
+
+What would you like to do?
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+1: Attempt to reinstall this existing certificate
+2: Renew & replace the certificate (may be subject to CA rate limits)
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Select the appropriate number [1-2] then [enter] (press 'c' to cancel): 1 1
+Deploying certificate
+
+We were unable to find a vhost with a ServerName or Address of practica-aur.ddns.net.
+Which virtual host would you like to choose?
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+1: 000-default.conf               |                       |       | Enabled
+2: default-ssl.conf               |                       | HTTPS | Enabled
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Select the appropriate number [1-2] then [enter] (press 'c' to cancel): 1
+[31mThe selected vhost would conflict with other HTTPS VirtualHosts within Apache. Please select another vhost or add ServerNames to your configuration.[0m
+Could not install certificate
+[1m
+NEXT STEPS:
+[0m- The certificate was saved, but could not be installed (installer: apache). After fixing the error shown below, try installing it again by running:
+  certbot install --cert-name practica-aur.ddns.net
+
+[31mVirtualHost not able to be selected.[0m
+Ask for help or search for solutions at https://community.letsencrypt.org. See the logfile /var/log/letsencrypt/letsencrypt.log or re-run Certbot with -v for more details.
+[?2004h]0;ubuntu@ip-172-31-18-96: ~/practica-01.5-iaw-26-27/scripts[01;32mubuntu@ip-172-31-18-96[00m:[01;34m~/practica-01.5-iaw-26-27/scripts[00m$ 
+Script done on 2026-10-15 08:08:52+00:00 [COMMAND_EXIT_CODE="0"]
